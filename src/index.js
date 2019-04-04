@@ -9,4 +9,4 @@ export default (obj, exclude = []) => {
     }
   }
   return copy;
-}
+};
