@@ -3,9 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports["default"] = void 0;
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 var inArray = function inArray(prop, array) {
   return array.indexOf(prop) !== -1;
@@ -18,11 +18,11 @@ var _default = function _default(obj) {
 
   for (var attr in obj) {
     if (!inArray(attr, exclude)) {
-      if (obj.hasOwnProperty(attr)) copy[attr] = obj[attr];
+      if (Object.prototype.hasOwnProperty.call(obj, attr)) copy[attr] = obj[attr];
     }
   }
 
   return copy;
 };
 
-exports.default = _default;
+exports["default"] = _default;
